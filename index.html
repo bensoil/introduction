@@ -4,22 +4,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduksjon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <p>Hei, jeg heter Benjamin Myhre Søiland. Mine hobbyer er:
+<body id="bodacious">
+    <h1>Benjamin Myhre Søiland</h1>
+    <div>
+        Hei, jeg heter Benjamin Myhre Søiland. Jeg er 27 år og kommer fra Tjøme i Færder Kommune.
+        <br>
+        Jeg gikk Service-og-samferdssel i vg1 og videre til IKT-Servicefag i vg2. Tok 3. år i skole og tok fagbrev etter
+        det.
+        <br>
+        Jeg har studert litt programering på egenhånd før, men kom ikke særlig langt med det. Har så og si bare intro
+        kunnskaper til HTML, CSS og JavaScript.
+        <br>
+        Nylig har jeg også studert japansk med offisielle tekstbøker innenfor det feltet, og kan vel kort fortalt si jeg
+        liker å lære!
+        <br>
+        Mine hobbyer er:
+    </div>
+
+
     <ul>
         <li>Programmering</li>
         <li>Studere japansk</li>
         <li>Gaming</li>
         <li>Se på anime/lese manga</li>
     </ul>
-    </p>
-    <img class="imag" src="img/ben.jpg" alt="">
 
+    <span id="imag1">
+        <img onclick="changeImg1()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag2">
+        <img onclick="changeImg2()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag3">
+        <img onclick="changeImg3()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag4">
+        <img onclick="changeImg4()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag5">
+        <img onclick="changeImg5()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag6">
+        <img onclick="changeImg6()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag7">
+        <img onclick="changeImg7()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag8">
+        <img onclick="changeImg8()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag9">
+        <img onclick="changeImg9()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag10">
+        <img onclick="changeImg10()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag11">
+        <img onclick="changeImg11()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag12">
+        <img onclick="changeImg12()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag13">
+        <img onclick="changeImg13()" class="imag" src="img/ben.jpg" alt="">
+    </span>
+    <span id="imag14">
+        <img onclick="changeImg14()" class="imag" src="img/ben.jpg" alt="">
+    </span>
 
+    <br>
+    <button onclick="changeBG1();">Gray</button>
+    <button onclick="changeBG2();">Bloo</button>
+
+    <script>
+        function changeBG1() {
+            document.getElementById('bodacious').style.backgroundColor = 'gray';
+        }
+        function changeBG2() {
+            document.getElementById('bodacious').style.backgroundColor = 'cyan';
+        }
+        function changeImg1() {
+            document.getElementById('imag1').innerHTML = /*html*/ `
+            <img class="imag" src="img/gun.png"alt="" onclick=changeImgA();>
+        `
+        }
+        function changeImgA() {
+            document.getElementById('imag1').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg1();>
+        `
+        }
+        function changeImg2() {
+            document.getElementById('imag2').innerHTML = /*html*/ `
+            <img class="imag" src="img/ranfy.jpg"alt="" onclick=changeImgB();>
+        `
+        }
+        function changeImgB() {
+            document.getElementById('imag2').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg2();>
+        `
+        }
+        function changeImg3() {
+            document.getElementById('imag3').innerHTML = /*html*/ `
+            <img class="imag" src="img/faec.jpg"alt="" onclick=changeImgC();>
+        `
+        }
+        function changeImgC() {
+            document.getElementById('imag3').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg3();>
+        `
+        }
+        function changeImg4() {
+            document.getElementById('imag4').innerHTML = /*html*/ `
+            <img class="imag" src="img/beeg.jpg"alt="" onclick=changeImgD();>
+        `
+        }
+        function changeImgD() {
+            document.getElementById('imag4').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg4();>
+        `
+        }
+        function changeImg5() {
+            document.getElementById('imag5').innerHTML = /*html*/ `
+            <img class="imag" src="img/ichiban.jpg"alt="" onclick=changeImgE();>
+        `
+        }
+        function changeImgE() {
+            document.getElementById('imag5').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg5();>
+        `
+        }
+        function changeImg6() {
+            document.getElementById('imag6').innerHTML = /*html*/ `
+            <img class="imag" src="img/chomp.png"alt="" onclick=changeImgF();>
+        `
+        }
+        function changeImgF() {
+            document.getElementById('imag6').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg6();>
+        `
+        }
+        function changeImg7() {
+            document.getElementById('imag7').innerHTML = /*html*/ `
+            <img class="imag" src="img/aaaaAAAAAAA.jpg"alt="" onclick=changeImgG();>
+        `
+        }
+        function changeImgG() {
+            document.getElementById('imag7').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg7();>
+        `
+        }
+        function changeImg8() {
+            document.getElementById('imag8').innerHTML = /*html*/ `
+            <img class="imag" src="img/muscle muscle.jpg"alt="" onclick=changeImgH();>
+        `
+        }
+        function changeImgH() {
+            document.getElementById('imag8').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg8();>
+        `
+        }
+        function changeImg9() {
+            document.getElementById('imag9').innerHTML = /*html*/ `
+            <img class="imag" src="img/sugarcoat.jpg"alt="" onclick=changeImgI();>
+        `
+        }
+        function changeImgI() {
+            document.getElementById('imag9').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg9();>
+        `
+        }
+        function changeImg10() {
+            document.getElementById('imag10').innerHTML = /*html*/ `
+            <img class="imag" src="img/garden.jpg"alt="" onclick=changeImgJ();>
+        `
+        }
+        function changeImgJ() {
+            document.getElementById('imag10').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg10();>
+        `
+        }
+        function changeImg11() {
+            document.getElementById('imag11').innerHTML = /*html*/ `
+            <img class="imag" src="img/alex.jpg"alt="" onclick=changeImgK();>
+        `
+        }
+        function changeImgK() {
+            document.getElementById('imag11').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg11();>
+        `
+        }
+        function changeImg12() {
+            document.getElementById('imag12').innerHTML = /*html*/ `
+            <img class="imag" src="img/p3r.png"alt="" onclick=changeImgL();>
+        `
+        }
+        function changeImgL() {
+            document.getElementById('imag12').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg12();>
+        `
+        }
+        function changeImg13() {
+            document.getElementById('imag13').innerHTML = /*html*/ `
+            <img class="imag" src="img/hitoshiki.png"alt="" onclick=changeImgM();>
+        `
+        }
+        function changeImgM() {
+            document.getElementById('imag13').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg13();>
+        `
+        }
+        function changeImg14() {
+            document.getElementById('imag14').innerHTML = /*html*/ `
+            <img class="imag" src="img/exp hunter.jpg"alt="" onclick=changeImgN();>
+        `
+        }
+        function changeImgN() {
+            document.getElementById('imag14').innerHTML = /*html*/ `
+            <img class="imag" src="img/ben.jpg"alt="" onclick=changeImg14();>
+        `
+        }
+    </script>
 </body>
 
 </html>
